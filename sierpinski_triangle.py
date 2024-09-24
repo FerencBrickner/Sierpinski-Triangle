@@ -17,7 +17,7 @@ def compute_and_draw_sierpinski_triangle(
     random_point: Point = seed
 
     for _ in range(number_of_points):
-        random_edge_of_triangle = choice(edges_of_triangle)
+        random_edge_of_triangle: Point = choice(edges_of_triangle)
 
         def compute_halving_point(point_1: Point, point_2: Point) -> Point:
             return ((point_1[0] + point_2[0]) / 2, (point_1[1] + point_2[1]) / 2)
